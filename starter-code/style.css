@@ -1,3 +1,53 @@
+:root {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  line-height: 1.1;
+
+  --fw-med: 500;
+
+  --lh-lg: 1.5;
+
+  /* Format: clamp(mobile-size, calc(fixed-size + fluid-scaling), desktop-size) */
+
+  /* Small text: 14px on mobile to 16px on desktop (0.875rem to 1rem) */
+  --text-sm: clamp(0.875rem, calc(0.85rem + 0.125vw), 1rem);
+
+  /* Medium text: 16px on mobile to 18px on desktop (1rem to 1.125rem) */
+  --text-md: clamp(1rem, calc(0.97rem + 0.15vw), 1.125rem);
+
+  /* Large text: 32px on mobile to 40px on desktop (2rem to 2.5rem) */
+  --text-lg: clamp(2.35rem, calc(1.75rem + 1.25vw), 2.5rem);
+
+  /* Extra Large text: 48px on mobile to 64px on desktop (3rem to 4rem) */
+  --text-xl: clamp(3rem, calc(2.36rem + 3.2vw), 4rem);
+
+  /* Fluid letter spacing - converted from 0.3-0.4rem@10px to 0.1875-0.25rem@16px */
+  --ls-sm: clamp(0.1875rem, calc(0.175rem + 0.06vw), 0.25rem);
+
+  --spc-50: 0.25rem;
+  --spc-100: 0.5rem;
+  --spc-200: 1rem;
+  --spc-300: 1.5rem;
+  --spc-400: 2rem;
+  --spc-500: 2.5rem;
+  --spc-700: 3.5rem;
+  --spc-800: 4rem;
+  --spc-900: 4.5rem;
+  --spc-1000: 5rem;
+  --spc-1400: 7rem;
+
+  --clr-cyan-300: hsl(192, 90%, 77%);
+  --clr-cyan-600: hsl(192, 37%, 48%);
+  --clr-cyan-hover: #71c0d4;
+  --clr-purple-300: hsl(268, 100%, 86%);
+  --clr-purple-600: hsl(268, 34%, 53%);
+  --clr-purple-hover: #b18bdd;
+  --clr-slate-900: hsl(240, 21%, 20%);
+  --clr-slate-600: hsl(240, 10%, 57%);
+  --clr-slate-300: hsl(240, 18%, 85%);
+  --clr-white: hsl(0, 0%, 98%);
+}
+
 *,
 *::before,
 *::after {
@@ -8,8 +58,92 @@
 
 img,
 picture,
-video,
-canvas,
 svg {
   max-width: 100%;
+}
+
+html {
+  font-weight: 900;
+}
+
+header {
+  padding: var(--spc-500) var(--spc-1000) var(--spc-800);
+  display: flex;
+  justify-content: center;
+}
+
+.hero__img-container {
+  display: flex;
+  gap: var(--spc-200);
+  justify-content: center;
+  margin-bottom: var(--spc-500);
+  overflow: clip;
+}
+
+.hero__img-container > img {
+  max-width: 55%;
+}
+
+.hero__container {
+  padding: 0 var(--spc-400) var(--spc-400);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spc-400);
+  align-items: center;
+}
+
+.hero__title {
+  font-size: var(--text-lg);
+  color: var(--clr-slate-900);
+  text-align: center;
+  font-weight: 900;
+}
+
+.hero__text {
+  text-align: center;
+  font-size: var(--text-md);
+  color: var(--clr-slate-600);
+  font-weight: var(--fw-med);
+}
+
+.hero__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spc-200);
+  align-items: center;
+}
+
+.button {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: var(--text-sm);
+  line-height: var(--lh-lg);
+  padding: var(--spc-200) var(--spc-500);
+  border-radius: var(--spc-400);
+}
+
+.button--blue {
+  background-color: var(--clr-cyan-600);
+}
+
+.button--purple {
+  background-color: var(--clr-purple-600);
+}
+
+.button--blue:hover,
+.button--blue:focus {
+  background-color: var(--clr-cyan-hover);
+}
+
+.button--purple:hover,
+.button--purple:focus {
+  background-color: var(--clr-purple-hover);
+}
+
+.button .version--blue {
+  color: var(--clr-cyan-300);
+}
+
+.version--purple {
+  color: var(--clr-purple-300);
 }
