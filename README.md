@@ -27,6 +27,11 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Demo Videos
+To visit the site and play around with viewports yourself, please see the solution URL in the "Links" section of this README. Here is a demo video if you don't want to visit the site. It is for the mobile solution.
+
+**Mobile solution demo video**
+https://github.com/user-attachments/assets/15f5f868-db84-41c0-a169-8251547e4242
+
 
 ### Links
 
