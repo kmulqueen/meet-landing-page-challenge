@@ -8,6 +8,7 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
     - [Demo Videos](#demo-videos)
     - [Links](#links)
   - [My process](#my-process)
@@ -26,12 +27,16 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
+### Screenshot
+
+![Kyle Mulqueen's desktop solution](./assets/kyle-solution-desktop.png)
+
 ### Demo Videos
+
 To visit the site and play around with viewports yourself, please see the solution URL in the "Links" section of this README. Here is a demo video if you don't want to visit the site. It is for the mobile solution.
 
 **Mobile solution demo video**
 https://github.com/user-attachments/assets/15f5f868-db84-41c0-a169-8251547e4242
-
 
 ### Links
 
