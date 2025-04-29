@@ -382,7 +382,11 @@ main {
   }
 
   main {
-    padding: var(--spc-700) var(--spc-1000) var(--spc-900);
+    padding: var(--spc-700) var(--spc-1400) var(--spc-900);
+  }
+
+  .features__gallery {
+    gap: var(--spc-400);
   }
 
   .features__description {
