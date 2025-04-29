@@ -353,7 +353,7 @@ main {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   header {
     padding: var(--spc-1000) 0 0 0;
   }
@@ -374,10 +374,11 @@ main {
   .hero__content {
     margin-top: var(--spc-200);
     gap: var(--spc-400);
+    justify-content: center;
   }
 
   .hero__title {
-    font-size: var(--text-lg);
+    font-size: var(--text-xl);
   }
 
   main {

@@ -23,7 +23,7 @@
       <img src="./assets/logo.svg" alt="Meet logo" class="logo" />
     </header>
 
-    <section class="hero">
+    <section class="hero" role="banner" aria-labelledby="hero-title">
       <div class="hero__container">
         <img
           src="./assets/desktop/image-hero-left.png"
@@ -34,7 +34,9 @@
           alt="Various headshots of people"
         />
         <div class="hero__content">
-          <h1 class="hero__title">Group Chat<br />for Everyone</h1>
+          <h1 class="hero__title" id="hero-title">
+            Group Chat<br />for Everyone
+          </h1>
           <p class="hero__text">
             Meet makes it easy to connect with others face-to-face virtually and
             collaborate across any device.
@@ -52,7 +54,12 @@
     <main>
       <div class="section-divider" aria-hidden="true">01</div>
 
-      <section class="features" id="about">
+      <section
+        class="features"
+        id="about"
+        role="region"
+        aria-labelledby="features-heading"
+      >
         <div class="features__gallery">
           <img
             src="./assets/desktop/image-woman-in-videocall.jpg"
@@ -75,7 +82,9 @@
 
         <div class="features__content">
           <p class="features__tagline">Built for modern use</p>
-          <h2 class="features__heading">Smarter meetings, all in one place</h2>
+          <h2 class="features__heading" id="features-heading">
+            Smarter meetings, all in one place
+          </h2>
           <p class="features__description">
             Send messages, share files, show your screen, and record your
             meetings — all in one workspace. Control who can join with
@@ -89,7 +98,12 @@
       <div class="section-divider" aria-hidden="true">02</div>
     </div>
 
-    <section class="cta" id="download">
+    <footer
+      class="cta"
+      id="download"
+      role="contentinfo"
+      aria-labelledby="cta-heading"
+    >
       <img
         src="./assets/mobile/image-footer.jpg"
         alt="A woman in a videocall"
@@ -99,8 +113,9 @@
           ./assets/tablet/image-footer.jpg   768w,
           ./assets/desktop/image-footer.jpg 1440w
         "
+        sizes="100vw"
       />
-      <h2 class="cta__heading">Experience more together</h2>
+      <h2 class="cta__heading" id="cta-heading">Experience more together</h2>
       <p class="cta__content">
         Stay connected with reliable HD meetings and unlimited one-on-one and
         group video sessions.
@@ -108,6 +123,6 @@
       <a href="#download" class="button button--purple"
         >Download <span class="version--purple">v1.3</span></a
       >
-    </section>
+    </footer>
   </body>
 </html>
