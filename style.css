@@ -389,6 +389,10 @@ main {
     gap: var(--spc-400);
   }
 
+  .features__heading {
+    max-inline-size: 15ch;
+  }
+
   .features__description {
     max-inline-size: 48ch;
   }
